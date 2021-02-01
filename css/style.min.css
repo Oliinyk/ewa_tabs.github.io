@@ -224,7 +224,12 @@ html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}body{font-fam
 	flex-wrap: wrap;
 }
 .ex_img img {
-	max-width: 500px;
+	width: 50%;
+}
+@media (max-width: 560px) {
+	.ex_img img {
+		width: 100%;
+	}
 }
 .img-fluid {
 	max-width: 100%;
