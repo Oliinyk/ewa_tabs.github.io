@@ -99,7 +99,39 @@ $(function () {
   // }, 2000);
 
  
+  // Modal Call
+  $('body').on('click', '.callBtnJs', function() {
+    $('body').find('.modalBgJs').addClass('active');
+    $('body').find('.modalWrapJs').addClass('active');
+    $('body').find('.modalCallJs').removeClass('hidden');
+    $('body').find('.modalThxJs').removeClass('active');
+  });
+  
+  // close modal
+  $(document).mouseup(function (e){
+    var modalCallJs = $(".modalCallJs");
+    if (!modalCallJs.is(e.target) && modalCallJs.has(e.target).length === 0) {
+      $('body').find('.modalBgJs').removeClass('active');
+      $('body').find('.modalWrapJs').removeClass('active');
+    }
+  });
 
+  $('body').on('focus', '.modalWrapJs input', function() {
+    if($(this).val().length < 4){
+      $(this).val('+380');
+    }
+  });
+
+  // modalBtnJs
+  $('body').on('click', '.modalBtnJs', function() {
+    var value = $(this).val();
+    if($('.modalWrapJs input').val().length > 12){
+      $('body').find('.modalCallJs').addClass('hidden');
+      $('body').find('.modalThxJs').addClass('active');
+    } else {
+      return false;
+    }
+  });
 
 });
 
