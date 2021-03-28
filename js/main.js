@@ -126,9 +126,11 @@ $(function () {
   $('body').on('click', '.modalBtnJs', function() {
     var value = $(this).val();
     if($('.modalWrapJs input').val().length > 12){
+      $(".modalCallJs").removeClass('error');
       $('body').find('.modalCallJs').addClass('hidden');
       $('body').find('.modalThxJs').addClass('active');
     } else {
+      $(".modalCallJs").addClass('error');
       return false;
     }
   });
