@@ -1393,135 +1393,6 @@ margin-bottom: 30px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
-.help p {
-  margin: 0; }
-.help ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-.help picture {
-  display: block; }
-.help__page {
-  background-color: #fff; }
-  @media (max-width: 1499px) {
-    .help__page {
-      background-size: contain; } }
-.help__page-inner {
-  padding: 27px 30px 80px; }
-  @media (max-width: 560px) {
-    .help__page-inner {
-      padding: 20px 0 80px; } }
-  .help__page-inner .container {
-    max-width: 800px; }
-.help .text-page-title {
-  font-size: 28px;
-  line-height: 1.1;
-  margin-top: 0;
-  padding: 27px 0px 30px; }
-.help__list li {
-  background-color: #6da9de;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 15px;
-  padding: 12px 15px 15px 34px;
-  margin-bottom: 10px;
-  position: relative; }
-  @media (max-width: 960px) {
-    .help__list li {
-      padding: 10px 15px 10px 50px; } }
-  .help__list li:after {
-    content: '';
-    background-image: url("../images/check-ico.png");
-    position: absolute;
-    top: calc(50% - 24px);
-    left: -20px;
-    height: 45px;
-    width: 45px;
-    background-size: 20px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-color: #96cbf2;
-    border-radius: 50%;
-    border: 3px solid #fff; }
-    @media (max-width: 960px) {
-      .help__list li:after {
-        background-size: 15px;
-        top: calc(50% - 15px);
-        left: 10px;
-        height: 30px;
-        width: 30px; } }
-.help .attention-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #a84241;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 15px;
-  padding: 16px 10px 10px 30px;
-  margin-top: 50px; }
-  @media (max-width: 560px) {
-    .help .attention-holder {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
-      margin-top: 30px;
-      padding: 16px 15px 10px 15px; } }
-  .help .attention-holder .text-holder {
-    padding: 0 15px 10px 0; }
-  .help .attention-holder .attention-img {
-    margin-top: -25px;
-    margin-bottom: -25px;
-    margin-right: -20px;
-    max-width: 125px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto; }
-    @media (max-width: 760px) {
-      .help .attention-holder .attention-img {
-        margin: 0;
-        max-width: 95px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; } }
-    @media (max-width: 560px) {
-      .help .attention-holder .attention-img {
-        margin: 0 auto 15px; } }
-    .help .attention-holder .attention-img img {
-      max-width: 100%; }
-.help .resalt-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 63px 0 0; }
-  @media (max-width: 560px) {
-    .help .resalt-holder {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      margin: 45px 0 0; } }
-  .help .resalt-holder .resalt-img {
-    max-width: 100px; }
-    @media (max-width: 560px) {
-      .help .resalt-holder .resalt-img {
-        margin: 0 auto; } }
-    .help .resalt-holder .resalt-img img {
-      max-width: 100%; }
-  .help .resalt-holder .text-holder {
-    margin: 0 0 0 30px; }
-    @media (max-width: 560px) {
-      .help .resalt-holder .text-holder {
-        margin: 0 0 0 15px; } }
-  .help .resalt-holder .result-title {
-    font-size: 22px;
-    margin: 0 0 16px; }
-  .help .resalt-holder p {
-    font-size: 18px; }
 .l_img {
   margin: 20px 0 30px;
 }
@@ -1556,6 +1427,197 @@ margin-bottom: 30px;
   }
 }
 
+/*help*/
+.help__page {
+  background-color: #fff;
+  line-height: 1.5;
+}
+.help__page-inner {
+  padding: 27px 30px 0; 
+}
+@media (max-width: 560px) {
+  .help__page-inner {
+    padding: 20px 0 0; 
+  }
+}
+.help__page-inner .container {
+  max-width: 800px; 
+}
+.help .text-page-title {
+  font-size: 38px;
+  line-height: 1.1;
+  margin-top: 0;
+  letter-spacing: -1px;
+    margin: 0 0 10px;
+}
+@media (max-width: 960px) {
+  .help .text-page-title {
+    font-size: 36px; 
+  } 
+}
+@media (max-width: 560px) {
+  .help .text-page-title {
+    font-size: 30px; 
+  } 
+}
+.help .text-default {
+  margin: 0 0 20px;
+}
+.help .text-default p {
+  font-size: 24px;
+  margin: 0;
+}
+@media (max-width: 560px) {
+  .help .text-default p {
+    font-size: 20px;
+  }
+}
+.help__list li {
+  background-color: #6da9de;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 5px 15px 12px 34px;
+  margin-bottom: 10px;
+  position: relative; }
+  @media (max-width: 960px) {
+    .help__list li {
+      font-size: 22px;
+      padding: 10px 15px 10px 50px; } }
+  @media (max-width: 560px) {
+    .help__list li {
+      font-size: 20px;
+    }
+  }
+  .help__list li:after {
+    content: '';
+    background-image: url("../images/check-ico.png");
+    position: absolute;
+    top: calc(50% - 24px);
+    left: -20px;
+    height: 45px;
+    width: 45px;
+    background-size: 20px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #96cbf2;
+    border-radius: 50%;
+    border: 3px solid #fff; }
+    @media (max-width: 960px) {
+      .help__list li:after {
+        background-size: 15px;
+        top: calc(50% - 15px);
+        left: 10px;
+        height: 30px;
+        width: 30px; } }
+
+.help .attention-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid #c73541;
+  color: #c73541;
+  border-radius: 15px;
+  margin-top: 20px; }
+  @media (max-width: 560px) {
+    .help .attention-holder {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      margin-top: 30px;
+      padding: 0; } }
+  .help .attention-holder .text-holder {
+    padding: 12px 15px 10px 32px;}
+  .help .attention-holder .text-holder p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .help .attention-holder .attention-img {
+    background-color: #c73541;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto; }
+  .help .attention-holder .attention-img img {
+    max-width: 85px;
+  }
+
+.help .resalt-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 23px 0 0; }
+  @media (max-width: 560px) {
+    .help .resalt-holder {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin: 45px 0 0; } }
+  .help .resalt-holder .resalt-img {
+    max-width: 158px; }
+    @media (max-width: 560px) {
+      .help .resalt-holder .resalt-img {
+        margin: 0 auto; } }
+    .help .resalt-holder .resalt-img img {
+      max-width: 100%; }
+    @media (max-width: 560px) {
+      .help .resalt-holder .text-holder {
+        margin: 0 0 0 15px; } }
+  .help .resalt-holder .result-title {
+    font-size: 24px;
+    margin: 0; }
+    @media (max-width: 960px) {
+      .help .resalt-holder .result-title {
+        font-size: 22px; } }
+  .help .resalt-holder p {
+    font-size: 20px;
+    margin: 0 0 7px; }
+    @media (max-width: 960px) {
+      .help .resalt-holder p {
+        font-size: 18px; } }
+.help .phone-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8e8e8;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  padding: 20px 0;
+  margin: 25px 0 0;
+}
+.help .resalt-img img {
+  max-width: 90px;
+  position: absolute;
+  top: -5px;
+  left: 22px;
+}
+.help .phone-holder .tel {
+  color: #3f484f;
+  font-size: 48px;
+  letter-spacing: -2px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .help .phone-holder {
+    padding: 30px 0;
+  }
+  .help .resalt-img img {
+    left: 15px;
+  }
+  .help .phone-holder .tel {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}
 
 
 
