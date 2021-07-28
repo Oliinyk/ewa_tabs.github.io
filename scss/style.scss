@@ -1619,6 +1619,105 @@ margin-bottom: 30px;
   }
 }
 
+.result__table-back {
+  width: 100%;
+}
+.result__table .result__table-inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.result__table .result__table-block {
+  width: calc(50% - 10px);
+    margin-right: 10px;
+    padding: 30px 20px;
+}
+.result__table-inner .form-callback {
+  width: calc(50% - 10px);
+    margin-left: 10px;
+    padding: 30px 20px;
+    background: #295D9B;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+.result__table-inner .form-callback p {
+  font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+  padding-right: 5px;
+}
+.result__table-inner .form-callback form {
+  display: flex;
+  position: relative;
+}
+.result__table-inner .form-callback input {
+  background-color: #FBFDFF;
+    border: 0;
+    height: 50px;
+    width: 260px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+.result__table-inner .form-callback .sub_btn {
+  position: absolute;
+  top: calc(50% - 21px);
+  right: 4px;
+  background: #2F80ED;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 1200px) {
+  .result__table .result__table-block table tr:first-child th {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px 0 0;
+  }
+  .result__table .result__table-block table tr {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .result__table .result__table-block,
+  .result__table-inner .form-callback {
+    width: 100%;
+    margin: 0;
+  }
+  .result__table .result__table-block {
+    margin-bottom: 20px;
+  }
+  .result__table-inner .form-callback {
+    justify-content: center;
+  }
+  .result__table-inner .form-callback p {
+    padding-right: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .result__table-inner .form-callback {
+    flex-wrap: wrap;
+  }
+  .result__table-inner .form-callback p {
+    padding: 0 0 25px;
+    font-size: 17px;
+  }
+  .result__table-inner .form-callback form {
+    width: 100%;
+  }
+  .result__table-inner .form-callback .form-group {
+    width: 100%;
+  }
+  .result__table-inner .form-callback input {
+    width: 100%;
+  }
+}
 
 
 @import 'media';
